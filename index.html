@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>The Stick Game</title>
+		<!-- Set the viewport. -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- Css. -->
+		<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Icons. -->
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+		<!-- Allow web app to be run in full-screen mode. -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<!-- Make the app title different than the page title. -->
+		<meta name="apple-mobile-web-app-title" content="Stick Game">
+		<!-- Configure the status bar. -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		
+	</head>
+
+	<body>
+		<div id="main">
+			<div id="iOSIntro"></div>
+			<div id="content">
+				<div class="headerzone">
+					<div class="logo">
+						<a href="index.html">THE STICK GAME</a>
+					</div>
+					<div class="icons">
+						<ul>
+							<li id="ic-stats"><a href="#"><img src="images/icon_stat.png"></a></li>
+							<li id="ic-change"><a href="#"><img src="images/icon_x.png"></a></li>
+							<li id="ic-refresh"><a href="#"><img src="images/icon_refresh.png"></a></li>
+							<li id="ic-sound" class="sound-on"><a href="#"><img id="sound-img" src="images/icon_mute_off.png"></a></li>
+							<li id="ic-home"><a href="index.html"><img src="images/icon_home.png"></a></li>						
+							<li id="ic-help"><a href="#"><img src="images/icon_help.png"></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div id="container">
+					<div class="topzone">
+						<!-- step 0 -->
+						<div id="intro">
+							<img id="top-image" src="media/intro_animation.gif">
+						</div>
+						<!-- step 1 -->
+						<div id="story">                   
+							<div class= storytext>
+							</div>
+						</div>
+						<!-- step 2 -->
+						<div id="options">  
+							<div class="centered">
+								<!-- single player -->
+								<form action="" method="get" id="single-player">
+									<h1>One Player</h1>
+									Enter your name<br>
+									<input type="text" name="player-0" id="player-0" placeholder="name">
+									<button id="btn-single" type="submit">continue</button>
+								</form>
+								<!-- multiplayer -->
+								<form action="" method="get" id="multi-player">
+									<h1>Two Players</h1>
+									Enter your names<br>
+									<input type="text" name="player-1" id="player-1" placeholder="name player 1">
+									<input type="text" name="player-2" id="player-2"placeholder="name player 2">
+									<button id="btn-multi" type="submit">continue</button>
+								</form>
+							</div>
+						</div>
+						<!-- step 3 -->
+						<div id="images" class="images drag-items">                   
+						</div>
+						<!-- step 4 -->
+						<div id="statistics">
+							<div id="multiplayer-result">
+								<h1> YOUR RECENT RESULTS</h1>
+								<p id="multi-info"></p>
+								<div id="multiplayer-stats">
+									<div class="col-1">
+										<table id="versus">
+										</table>
+									</div>
+									<div class="col-1">
+										<table id="tbl-rounds">
+											<p>Round details</p>
+											<tbody>
+												<tr id="player1-stats"><td id="name1"></td></tr>
+												<tr id="player2-stats"><td id="name2"></td></tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div id="player-result">
+								<h1> YOUR RESULT</h1>
+								<ul id="player-stats">
+								</ul>
+							</div>
+							<div id="highscore">
+								<h1> HIGHSCORES</h1>
+								<!-- toplist percentage -->
+								<div class="col-2">
+									<p>Players that got the highest percentage for <br>picking all the sticks of total rounds</p> 
+									<table>
+										<thead><tr><th>rank</th><th>name</th><th>percentage</th><th>of total rounds</th></tr></thead>
+										<tbody id="toplist-perc">
+										</tbody>
+									</table>
+								</div>
+								<!-- toplist all points --> 
+								<div class="col-2">
+									<p>Players that got the highest amount of <br>average points in total rounds</p>
+									<table>
+										<thead><tr><th>rank</th><th>name</th><th>average points</th><th>in total rounds</th></tr></thead>
+										<tbody id="toplist-points">
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dropzone">
+						<div class="info-area">
+							<div class="singleplayer-box">
+								<p id="player-text"></p>
+								<div class= "button-change-box s-change">
+									<button class="btn-change" type="button"></button>
+								</div>
+							</div>
+							<div class="multiplayer-box">
+								<p id="player1-text"></p>
+								<p id="player2-text"></p>
+								<div class= "button-change-box  m-change">
+									<button class="btn-change" type="button"></button>
+								</div>
+							</div>
+						</div>
+						<div class="center-area">
+							<div class="button-box">
+								<button id="btn-main" class="btn-0" type="button"></button>
+								<button id="btn-skip" type="button"> </button>
+							</div>
+							<p id="centertext"></p>
+						</div>
+						<div class="counter">
+							<p id="point-counter">0</p>
+							<p id="round-counter"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>           
+
+		<!-- scripts should be placed last, before body closing -->
+		<!-- jquery  -->
+		<script src="js/jquery.js"></script>
+		<!-- interact - to create draggable elements -->
+		<script src="js/interact-1.2.4.js"></script>
+		<!-- sweet alert - to create better looking alerts -->
+		<script src="js/sweetalert.min.js"></script>
+		<!-- main - the project´s code -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1157 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, p {
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 16px;	
+}
+
+#main {
+	margin: 0 auto;
+	position: relative;
+}
+
+#iOSIntro {
+	width: 100%;
+	height: 100%;
+}
+
+#iOSIntro {
+	background: url("../images/intro_ios.jpg");
+}
+
+.desktop {
+	border: 1px solid black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover, a:focus, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+   	font-size: 1.25em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h2 {
+   	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+h3 {
+	margin: 10px auto 0px;
+}
+
+h4 {
+	margin-bottom: 0.6em;
+	color: black;
+}
+
+/*--------------------------- */
+/* HEADER
+/*--------------------------- */
+.headerzone {
+	background-color: #fff;
+	width: 100%;
+	height: 50px;
+}
+
+.logo {
+	padding: 10px 10px 10px;
+	float: left;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.icons {
+	float: right;
+	display: inline-block;
+}
+
+.icons ul {
+	padding: 0px;
+	margin: 0 10px;
+}
+
+.icons ul li {
+	float: left;
+	list-style: none;
+	padding: 5px;
+}
+
+/*--------------------------- */
+/* CONTAINER
+/*--------------------------- */
+#container {
+	background: url("../images/back_grey.jpg");
+	width: 100%;
+	position: relative;
+}
+
+.topzone {
+	background: rgba(255, 255, 255, 0.75 );
+	width: 100%;
+	position: relative;
+	z-index: 100;
+}
+
+.dropzone {
+	width: 100%;
+	position: relative;
+	background: rgba(255, 255, 255, 0.35 );
+}
+
+.info-area {
+	float: left;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.singleplayer-box {
+	background: url("../images/player.png");
+	z-index: 1000;
+	float: left;
+}
+
+.multiplayer-box {
+	background: url("../images/player2.png");
+	z-index: 1000;
+	float: left;
+}
+
+#player-text {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #fff;
+   	font-size: 10px;
+   	z-index: 1000;
+}
+
+#player1-text, #player2-text{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+	z-index: 1000;
+}
+
+.gray {
+	color: #505050 !important;
+}
+
+.center-area {
+ 	float: left;
+	text-align: center;
+}
+
+#centertext {
+	max-width: 100%;
+	margin: 50px auto;
+	color: #fafafa;
+}
+
+.button-box {
+	width: 40px;
+	margin: 0 auto;
+}
+
+/*--------------------------- */
+/* BUTTONS
+/*--------------------------- */
+button {
+	background-color: transparent;
+	border-radius: 0px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	padding: 0px;
+	text-decoration:none;
+	border: 0; 
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+	font-family: Montserrat, Arial, sans-serif;
+}
+
+#btn-main {
+	margin: 30px 0 10px;
+	background: url("../images/icon_next.png");
+	width: 40px;
+	height: 40px;
+}
+
+#btn-main:hover {
+	background: url("../images/icon_next_on.png");
+}
+
+#btn-skip {
+	background: url("../images/icon_skip.png");
+	width: 40px;
+	height: 40px;
+}
+
+#btn-skip:hover {
+	background: url("../images/icon_skip_on.png");
+}
+
+.button-change-box {
+	width: 40px;	
+}
+
+.s-change {
+	margin: 40px auto 0;	
+}
+
+.m-change {
+	margin: 32px auto 0;
+}
+
+.btn-change {
+	background: url("../images/icon_x.png");
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+
+.btn-change:hover {
+	background: url("../images/icon_x_on.png");
+}
+
+/*--------------------------- */
+/* FORMS
+/*--------------------------- */
+form {
+	margin-bottom: 40px;
+}
+
+input {
+	border: 1px solid black; 
+	padding: 5px 10px; 
+	font-size: 0.7em; 
+	color: black;  
+	margin: 20px 0 20px; 
+	width: 200px;
+	background: #eee;
+	outline: none;
+}
+
+input:focus { 
+	border: solid 1px pink; 
+	background: #fafafa;
+}
+
+input:active { 
+	border: solid 1px pink; 
+	background: #eee;
+}
+
+/*--------------------------- */
+/* DIVS
+/*--------------------------- */
+#intro {
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#top-image {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+#story {
+	background: url("../images/intro_story.jpg");
+	width: 100%;
+	height: 100%;
+}
+
+.storytext {
+	padding: 100px 210px;
+	text-align: left;
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.8;	
+}
+
+.storytext p, .storytext h1 {
+	font-size: 22px;
+}
+	
+#options {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#options:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url("../images/opt_sticks.jpg");
+	opacity: 0.5;
+}
+
+.centered {
+	padding: 100px 210px;
+}
+
+.counter {
+	background: url("../images/counter.png"); 
+	z-index: 1000;
+	float: right;
+	text-align: center;
+}
+
+#point-counter {
+	margin: 41% auto 0;
+	font-size: 24px;
+	color: #fff;
+}
+
+#round-counter {
+	margin-top: 20%;
+	text-align: center;
+	font-size: 12px;
+	color: black;
+}
+
+.image {
+	position: absolute;
+}
+
+.drop-target {
+  	background: rgba(255, 255, 255, 0.45 );
+}
+
+/* for mouse event */
+.tap-target:hover {
+	border: 1px dotted black;
+	z-index: 2000;
+}
+
+/* for touch event */
+.tap-target:hover {
+	border: 1px dotted black;
+	z-index: 2000;
+}
+
+/*--------------------------- */
+/* STATISTICS
+/*--------------------------- */
+#statistics {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+	
+#statistics:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url("../images/intro_story.jpg");
+	opacity: 0.5;
+}
+
+.col-1 {
+	width: 100%;
+	float: left;
+}
+
+.col-2 {
+	width: 50%;
+	float: left;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: left;
+	color: white;
+	background: #bbb;
+}
+
+tr {
+	border: 1px solid rgba(247, 247, 247, 1 );
+}
+
+th {
+	background: rgba(255, 255, 255, 0.4 );
+	text-align: left;
+	padding: 3px 5px;
+}
+
+td {
+	padding: 3px 5px;
+}
+
+#tbl-rounds {
+	max-width: 100%;	
+	color: black;
+	background: rgba(255, 255, 255, 0.0);
+	border: 1px solid black;
+}
+
+#tbl-rounds td {
+	padding: 3px 10px;
+	border: 1px solid black;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#highscore {
+	padding: 20px;
+}
+
+#player-result {
+	padding: 20px;
+}
+
+#multiplayer-result {
+	padding: 20px;
+}
+
+/*--------------------------- */
+/* SWEET ALERT CUSTOMIZATION
+/*--------------------------- */
+.sweet-overlay {
+	background-color: rgba(0, 0, 0, 0);
+}
+.sweet-alert {
+	background: rgba(255, 255, 255, 1);
+	color: black;
+	font-family: Montserrat, Arial, sans-serif;
+	width: 420px;
+	height: 420px;
+	padding: 17px;
+	border-radius: 420px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: 45%;
+	margin-left: -235px;
+	margin-top: -200px;
+}
+
+.sweet-alert h2 {
+	color: black;
+	margin: 70px 80px 25px;
+	font-weight: 700;
+}
+
+.sweet-alert p {
+	color: black;
+	font-size: 16px;
+	text-align: center;
+	font-weight: normal;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	line-height: normal;
+  	max-width: 300px;
+}
+
+ .sweet-alert button {
+	background-color: #fafafa;
+	color: black;
+	border: none;
+	box-shadow: none;
+	font-size: 12px;
+	font-weight: 400;
+	-webkit-border-radius: 4px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 26px 5px 0 5px;
+	cursor: pointer; 
+ }
+	.sweet-alert button:focus {
+	  outline: none;
+	}
+	.sweet-alert button:hover {
+	  background-color: #eeeeee;
+	}
+	.sweet-alert button:active {
+	  background-color: #eeeeee;
+	}
+	.sweet-alert button.cancel {
+	  background-color: #fafafa;
+	}
+		.sweet-alert button.cancel:hover {
+		background-color: #eeeeee;
+		}
+		.sweet-alert button.cancel:active {
+		background-color: #eeeeee;
+		}
+
+
+/*------------------------------------------------------  */
+/* DESKTOP AND IPAD LANDSCAPE
+/*------------------------------------------------------  */
+@media only screen and (min-device-width : 1224px),
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+	#main {
+		width: 1024px; 
+		height: 768px; 
+	}
+	
+	/* CONTAINER
+	/*--------------------------- */
+	
+	#container {
+		height: 718px;
+	}
+
+	.topzone {
+		height: 540px;
+	}
+
+	.dropzone {
+		height: 178px;
+	}
+
+	.info-area {
+		width: 178px;
+		height: 178px;
+	}
+
+	.singleplayer-box {
+		width: 178px;
+		height: 178px;
+	}
+
+	.multiplayer-box {
+		width: 178px;
+		height: 178px;
+	}
+
+	#player-text {
+		margin-top: 46%;
+	}
+
+	#player1-text {
+		margin-top: 43%;
+	}
+
+	.center-area {
+		width: 668px;
+		height: 178px;
+	}
+
+	#centertext {
+		margin: 50px auto;
+	}
+
+	.counter {
+		width: 178px;
+		height: 178px;
+	}
+
+	/* STATISTICS
+	/*--------------------------- */
+
+	table {
+		margin: 20px 0;
+		max-width: 480px;
+	}
+
+/* End Desktop and Ipad Landscape */}
+
+/*---------------------------------------------------- */
+/* IPAD PORTRAIT
+/*---------------------------------------------------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+	#main {
+		width: 768px; 
+		height: 1024px; 
+	}
+
+	#iOSIntro {
+		background: url("../images/intro_ios_portrait.jpg");
+	}
+
+	/* HEADER
+	/*--------------------------- */
+	.headerzone {
+		width: 100%;
+	}
+
+	/* CONTAINER
+	/*--------------------------- */
+
+	#container {
+		background: url("../images/back_grey_portrait.jpg");
+		width: 100%;
+		height: 974px;
+		position: relative;
+	}
+
+	.topzone {
+		width: 100%;
+		height: 796px;
+	}
+
+	.dropzone {
+		width: 100%;
+		height: 178px;
+	}
+
+	.center-area {
+		width: 412px;
+	}
+
+	/* DIVS
+	/*--------------------------- */
+	#top-image {
+		padding-top: 20%;
+	}
+
+	#story {
+		background: url("../images/intro_story_portrait.jpg");
+	}
+
+	.storytext {
+		padding: 120px 200px;
+	}
+
+	#options:before {
+		background: url("../images/opt_sticks_portrait.jpg");
+	}
+
+	/* STATISTICS
+	/*--------------------------- */
+
+	#statistics:before {
+		background: url("../images/intro_story_portrait.jpg");
+	}
+
+	.col-1, 
+	.col-2 {
+		width: 100%;
+		float: left;
+	}
+
+	table {
+		max-width: 100%;
+		min-width: 500px;
+	}
+
+	#highscore,
+	#player-result,
+	#multiplayer-result {
+		padding: 20px 50px;
+	}
+	
+/* End Ipad Portrait */ }
+
+/*---------------------------------------------------- */
+/* IPHONE
+/*---------------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (device-aspect-ratio: 2/3),
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (device-aspect-ratio: 40/71),
+only screen and (min-device-width: 375px) and (max-device-width: 667px), 
+only screen and (min-device-width: 414px) and (max-device-width: 736px){
+
+	body, p {
+		  font-size: 10px;
+	}
+
+	h1 {
+		  font-size: 1.3em;
+	}
+
+	#main {
+		width: 100%; 
+		height: 100%; 
+	}
+
+	/* HEADER
+	/*--------------------------- */
+	.headerzone {
+		width: 100%;
+	}
+
+	.logo {
+		padding: 5px;
+		max-width: 50px;
+		font-size: 12px;
+	}
+
+	.icons ul li {
+		  padding: 5px 0px;
+	}
+
+	/* CONTAINER
+	/*--------------------------- */
+
+	#container {
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		position: relative;
+	}
+
+	.topzone {
+		width: 100%;
+	}
+
+	.dropzone {
+		width: 100%;
+		height: 100px;
+	}
+
+	.center-area {
+		height: 100px;
+	}
+
+	.info-area {
+		width: 100px;
+		height: 100px;
+	}
+
+	.singleplayer-box, .multiplayer-box  {
+		width: 100px;
+		height: 100px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.counter {
+		width: 100px;
+		height: 100px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	#point-counter {
+		margin: 40% auto 0;
+		font-size: 16px;
+	}
+
+	#round-counter {
+		margin-top: 17%;
+		font-size: 10px;
+	}
+
+	#player-text {
+		margin-top: 10%;
+	}
+
+	#player1-text {
+		margin-top: 10%;
+	}
+
+	#player2-text {
+		margin-top: 53%;
+	}
+
+	#centertext {
+		margin: 10% auto;
+		font-size: 0.9em;
+	}
+
+	#btn-main {
+		margin: 10px 0 0;
+	}	
+
+	.btn-change {
+		display: none;
+	}
+	
+	/* DIVS
+	/*--------------------------- */
+
+	#story {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.storytext {
+		padding: 30px 50px;
+	}
+
+	#options:before {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.centered {
+		  padding: 30px 50px;
+	}
+
+	/* FORMS
+	/*--------------------------- */
+	form {
+		margin-bottom: 20px;
+		width: 180px;
+	}
+
+	input {
+		margin: 10px 0 10px; 
+	}
+
+	/* STATISTICS
+	/*--------------------------- */
+
+	#statistics:before {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	table {
+		font-size: 9px
+	}
+
+	#highscore,
+	#player-result,
+	#multiplayer-result {
+		padding: 20px 20px 0px;
+	}
+	
+	.col-1, 
+	.col-2 {
+		margin: 5px 0 10px;
+	}
+
+	/* SWEET ALERT CUSTOMIZATION
+	/*--------------------------- */
+	.sweet-alert {
+		width: 300px;
+		height: 300px;
+		padding: 0px;
+		border-radius: 300px;
+		margin-left: -150px;
+		margin-top: -150px;
+	}
+
+	.sweet-alert h2 {
+		font-size: 16px;
+		margin: 40px 60px 20px;
+		line-height: 1.2em;
+	}
+
+	.sweet-alert p {
+		font-size: 10px;
+		max-width: 165px;
+	}
+
+	.sweet-alert button {
+		font-size: 10px;
+		margin: 16px 5px 0 5px;
+
+	 }
+/*---------------------------------------------------- */
+/* IPHONE LANDSCAPE
+/*---------------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3),
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71),
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {	
+
+	#iOSIntro {
+		background: url("../images/intro_ios_landscape_iphone.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.storytext p, .storytext h1 {
+		  font-size: 9px;
+	}
+	
+	table {
+		max-width: 100%;
+		min-width: 200px;
+		font-size: 9px;
+		margin: 5px 5px 0 0;
+	}
+	
+/* End Iphone Landscape */ }
+/*---------------------------------------------------- */
+/* IPHONE PORTRAIT
+/*---------------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3),
+only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71),
+only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) {
+	
+		
+	#top-image {
+		padding-top: 20%;
+	}
+	
+	#iOSIntro {
+		background: url("../images/intro_ios_portrait_iphone.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.storytext p, .storytext h1 {
+		  font-size: 12px;
+	}
+	
+	#container {
+		background: url("../images/back_grey_portrait.jpg");
+	}
+	
+	#story {
+		background: url("../images/intro_story_portrait.jpg");
+	}
+	
+	#options:before {
+		background: url("../images/opt_sticks_portrait.jpg");
+	}
+	
+	#statistics:before {
+		background: url("../images/intro_story_portrait.jpg");
+	}
+	
+	.col-1, 
+	.col-2 {
+		width: 100%;
+		float: left;
+	}
+
+	table {
+		max-width: 100%;
+		min-width: 280px;
+	}
+	
+/* End Iphone Portrait */ }
+	
+/*---------------------------------------------------- */
+/* IPHONE 4/4S LANDSCAPE
+/*---------------------------------------------------- */
+@media only screen 
+  and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+	#main {
+		width: 480px; 
+		height: 320px; 
+	}
+
+	#container {
+		height: 270px;
+	}
+
+	.topzone {
+		height: 170px;
+	}
+	
+	.center-area {
+		width: 280px;
+	}
+	
+/* End Iphone Landscape */ }
+
+/*---------------------------------------------------- */
+/* IPHONE 4/4S PORTRAIT
+/*---------------------------------------------------- */
+@media only screen 
+and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+	#main {
+		width: 320px; 
+		height: 480px; 
+	}
+
+
+	#container {
+		height: 430px;
+	}
+
+	.topzone {
+		height: 330px;
+	}
+
+	.center-area {
+		width: 120px;
+	}
+	
+	.storytext p, .storytext h1 {
+		  font-size: 9px;
+	}
+	
+/* End 4/4S Iphone Portrait */ }
+
+/*---------------------------------------------------- */
+/* IPHONE 5/5S LANDSCAPE
+/*---------------------------------------------------- */
+@media only screen 
+and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71){
+
+	#main {
+		width: 568px; 
+		height: 320px; 
+	}
+
+	#container {
+		height: 270px;
+	}
+
+	.topzone {
+		height: 170px;
+	}
+	
+	.center-area {
+		width: 368px;
+	}
+	
+/* End Iphone 5/5S Landscape */ }
+
+/*---------------------------------------------------- */
+/* IPHONE 5/5S PORTRAIT
+/*---------------------------------------------------- */
+@media only screen 
+and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+
+	#main {
+		width: 320px; 
+		height: 568px; 
+	}
+
+	#container {
+		height: 518px;
+	}
+
+	.topzone {
+		height: 418px;
+	}
+	
+	.center-area {
+		width: 120px;
+	}
+	
+/* End Iphone 5/5S Portrait */ }
+
+/*---------------------------------------------------- */
+/* IPHONE 6 LANDSCAPE
+/*---------------------------------------------------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+	#main {
+		width: 667px; 
+		height: 375px; 
+	}
+
+	#container {
+		height: 325px;
+	}
+
+	.topzone {
+		height: 225px;
+	}
+	
+	.center-area {
+		width: 467px;
+	}
+	
+/* End Iphone 6 Landscape */ }
+
+/*---------------------------------------------------- */
+/* IPHONE 6 PORTRAIT
+/*---------------------------------------------------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+
+	#main {
+		width: 375px; 
+		height: 667px; 
+	}
+
+	#container {
+		height: 617px;
+	}
+
+	.topzone {
+		height: 517px;
+	}
+	
+	.center-area {
+		width: 175px;
+	}
+	
+/* End Iphone 6 Portrait */ }
+
+/*---------------------------------------------------- */
+/* IPHONE 6 PLUS LANDSCAPE
+/*---------------------------------------------------- */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 3) {
+
+	#main {
+		width: 736px; 
+		height: 414px; 
+	}
+
+	#container {
+		height: 364px;
+	}
+
+	.topzone {
+		height: 264px;
+	}
+	
+	.center-area {
+		width: 536px;
+	}
+	
+	.storytext {
+		padding: 50px 200px;
+	}
+	
+/* End Iphone 6+ Landscape */ }
+
+/*---------------------------------------------------- */
+/* IPHONE 6 PLUS PORTRAIT
+/*---------------------------------------------------- */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 3) {
+
+	#main {
+		width: 414px; 
+		height: 736px; 
+	}
+
+	#container {
+		height: 686px;
+	}
+
+	.topzone {
+		height: 586px;
+	}
+	
+	.center-area {
+		width: 214px;
+	}
+	
+/* End Iphone 6+ Portrait */ }
